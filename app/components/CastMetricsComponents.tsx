@@ -28,7 +28,7 @@ export default function CastStatsTable() {
 
   useEffect(() => {
     // Replace with your actual API endpoint
-    fetch("/api/warpcast_stats")
+    fetch("https://client.warpcast.com/v2/casts?fid=967464&limit=15")
       .then((res) => res.json())
       .then((data: ApiResponse) => {
         setCasts(data.result.casts);
@@ -38,32 +38,32 @@ export default function CastStatsTable() {
   }, []);
 
   return (
-    <div className="p-6">
+    <div className="p-6 w-full max-w-[1800px] mx-auto">
       <h2 className="text-xl font-semibold mb-4">Post Statistics</h2>
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <div className="overflow-x-auto">
-          <table className="min-w-full border border-gray-200 rounded-lg bg-[var(--app-card-bg)]">
+        <div className="overflow-x-auto w-full">
+          <table className="w-full min-w-[1200px] border border-gray-200 rounded-lg bg-[var(--app-card-bg)]">
             <thead>
               <tr className="bg-[var(--app-card-border)]">
-                <th className="px-4 py-2 text-left">Time</th>
-                <th className="px-4 py-2 text-left">Title</th>
-                <th className="px-4 py-2 text-center">Reactions</th>
-                <th className="px-4 py-2 text-center">Replies</th>
-                <th className="px-4 py-2 text-center">Recasts</th>
+                <th className="px-6 py-2 text-left">Time</th>
+                <th className="px-6 py-2 text-left">Title</th>
+                <th className="px-6 py-2 text-center">Reactions</th>
+                <th className="px-6 py-2 text-center">Replies</th>
+                <th className="px-6 py-2 text-center">Recasts</th>
               </tr>
             </thead>
             <tbody>
               {casts.map((cast) => (
                 <tr key={cast.hash} className="border-t border-[var(--app-card-border)]">
-                  <td className="px-4 py-2 whitespace-nowrap">{formatDate(cast.timestamp)}</td>
-                  <td className="px-4 py-2 max-w-xs truncate" title={cast.text}>
+                  <td className="px-6 py-2 whitespace-nowrap">{formatDate(cast.timestamp)}</td>
+                  <td className="px-6 py-2 max-w-2xl truncate" title={cast.text}>
                     {cast.text.split("\n")[0].slice(0, 80)}
                   </td>
-                  <td className="px-4 py-2 text-center">{cast.reactions.count}</td>
-                  <td className="px-4 py-2 text-center">{cast.replies.count}</td>
-                  <td className="px-4 py-2 text-center">{cast.recasts.count}</td>
+                  <td className="px-6 py-2 text-center">{cast.reactions.count}</td>
+                  <td className="px-6 py-2 text-center">{cast.replies.count}</td>
+                  <td className="px-6 py-2 text-center">{cast.recasts.count}</td>
                 </tr>
               ))}
             </tbody>
