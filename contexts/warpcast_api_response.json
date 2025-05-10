@@ -1,0 +1,1334 @@
+{
+  "result": {
+    "casts": [
+      {
+        "hash": "0x27a509e1fd1361d5d01e0a36310f35c0d2888f3e",
+        "threadHash": "0xad8c7a9f6b05ce6350965010fcdb7b89009bc102",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "While there are no clear numbers, there are estimates. a16zcrypto reports are great sources:\n\n- \"Estimating the number of real crypto users\" (2024) by: https://a16zcrypto.com/posts/article/estimating-crypto-users/\n- \"State of Crypto\" (2024): https://a16zcrypto.com/posts/series/state-of-crypto\n\nFor zombie blockchains:\n- \"How to sort zombie blockchains from the living\" (2024): https://www.axios.com/2024/05/09/zombie-blockchains-crypto-forbes-report",
+        "timestamp": 1746856901000,
+        "replies": {
+          "count": 0
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentHash": "0xad8c7a9f6b05ce6350965010fcdb7b89009bc102",
+        "parentAuthor": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "embeds": {
+          "images": [],
+          "urls": [
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://a16zcrypto.com/posts/article/estimating-crypto-users/",
+                "sourceUrl": "https://a16zcrypto.com/posts/article/estimating-crypto-users/",
+                "title": "Estimating the number of real crypto users",
+                "description": "How to estimate the number of monthly active crypto users given that common metrics like active addresses are so easily gamed.",
+                "domain": "a16zcrypto.com",
+                "image": "https://api.a16zcrypto.com/wp-content/uploads/2024/10/9-1.png",
+                "useLargeImage": true
+              }
+            },
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://a16zcrypto.com/posts/series/state-of-crypto",
+                "sourceUrl": "https://a16zcrypto.com/posts/series/state-of-crypto",
+                "title": "Topic Page",
+                "domain": "a16zcrypto.com",
+                "image": "https://a16zcrypto.com/_nuxt/img/a16zcrypto_Logo_white.9eec2a0.svg",
+                "useLargeImage": false
+              }
+            }
+          ],
+          "unknowns": [],
+          "videos": [],
+          "processedCastText": "While there are no clear numbers, there are estimates. a16zcrypto reports are great sources:\n\n- \"Estimating the number of real crypto users\" (2024) by: https://a16zcrypto.com/posts/article/estimating-crypto-users/\n- \"State of Crypto\" (2024): https://a16zcrypto.com/posts/series/state-of-crypto\n\nFor zombie blockchains:\n- \"How to sort zombie blockchains from the living\" (2024): https://www.axios.com/2024/05/09/zombie-blockchains-crypto-forbes-report",
+          "groupInvites": []
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0xad8c7a9f6b05ce6350965010fcdb7b89009bc102",
+        "threadHash": "0xad8c7a9f6b05ce6350965010fcdb7b89009bc102",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "◼️5/100: Block-by-Block\n\nOne thing I learned about: The number of blockchains.\n\nI don't know.\n\n- There is no one list of blockchains.\n- Private blockchains are, well, private.\n- 'Public' in public blockchains does not mean 'globally known'.\n- Blockchains can appear/disappear quickly without leaving a record.\n- Zombie blockchains: They have been once but maybe not anymore.\n\n🔽🛠️Resources🔽",
+        "timestamp": 1746856900000,
+        "replies": {
+          "count": 1
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentSource": {
+          "type": "url",
+          "url": "https://farcaster.group/data"
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0xa49197e17f2b508cc33dead751d9c167dc32886e",
+        "threadHash": "0xb29c6155e8beba4f786ffd53f252ca28bcd66ce6",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "Depends on what you are trying to achieve 😊.\n\nYou can get quite far with those if your main aim is to do ad-hoc analysis and dashboards.\n\nDo you have a specific project in mind?",
+        "timestamp": 1746808883000,
+        "replies": {
+          "count": 0
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentHash": "0xb29c6155e8beba4f786ffd53f252ca28bcd66ce6",
+        "parentAuthor": {
+          "fid": 1025347,
+          "displayName": "Esther Naisimoi",
+          "profile": {
+            "bio": {
+              "text": "DATA | AiML | Datascience",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            },
+            "newUserBadge": false
+          },
+          "followerCount": 49,
+          "followingCount": 114,
+          "username": "essiebx",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/c32da51c-4e0f-4969-d13c-95fdd2952c00/rectcrop3",
+            "verified": false
+          }
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0x4f7cf16d1864bf1b9efca0e17a29f19a3c29ed64",
+        "threadHash": "0x4f7cf16d1864bf1b9efca0e17a29f19a3c29ed64",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "◼️4/100: Block-by-Block\n\nOne thing I learned about: Securing content provenance\n\nChallenge: Data integrity in the age of deepfakes.\n\nProjects like Starling Lab aim to \"restore trust in digital media\":\n- Capture, store, and verify digital content\n- Create chains of evidence\n- Preserve digital records with cryptography\n\n🔽🛠️Resources🔽",
+        "timestamp": 1746773965000,
+        "replies": {
+          "count": 1
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentSource": {
+          "type": "url",
+          "url": "https://farcaster.group/data"
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0x62670d65fbad7725efae4bacfe4d3ad3c737a27c",
+        "threadHash": "0x4f7cf16d1864bf1b9efca0e17a29f19a3c29ed64",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "- Numbers Protocol: Decentralized Content Provenance (2024): https://www.numbersprotocol.io/\n- Setting the Standard for Content Attribution (2020): https://contentauthenticity.org/blog/cai-achieves-milestone-white-paper-sets-the-standard-for-content-attribution\n- Starling Lab for Data Integrity (2024) https://starlinglab.org",
+        "timestamp": 1746773965000,
+        "replies": {
+          "count": 0
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentHash": "0x4f7cf16d1864bf1b9efca0e17a29f19a3c29ed64",
+        "parentAuthor": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "embeds": {
+          "images": [],
+          "urls": [
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://www.numbersprotocol.io/",
+                "sourceUrl": "https://www.numbersprotocol.io/",
+                "title": "Numbers Protocol | Decentralized Content Provenance & Blockchain Solutions for Digital Media",
+                "description": "Explore Numbers Protocol, a blockchain-powered platform using C2PA and ERC-7053 standards to ensure content provenance and copyright verification. Empower creators and combat misinformation by verifying content authenticity through decentralized Web3 solutions.",
+                "domain": "numbersprotocol.io",
+                "image": "https://ipfs-pin.numbersprotocol.io/ipfs/bafybeid2duria2afrzeazcw2up5qqi7t6sbhiwbccad7nar3lpu7ggbgym",
+                "useLargeImage": true
+              }
+            },
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://contentauthenticity.org/blog/cai-achieves-milestone-white-paper-sets-the-standard-for-content-attribution",
+                "sourceUrl": "https://contentauthenticity.org/blog/cai-achieves-milestone-white-paper-sets-the-standard-for-content-attribution",
+                "title": "CAI Achieves Milestone: White Paper Sets the Standard for Content Attribution",
+                "description": "Today marks a significant milestone for the Content Authenticity Initiative as we publish our white paper, “Setting the Standard for Content Attribution”.",
+                "domain": "contentauthenticity.org",
+                "image": "https://adobe-cai-contentauthenticity-backend-prod.s3.us-east-1.amazonaws.com/CAI_Achieves_Milestone_86ec3d95d5.png",
+                "useLargeImage": false
+              }
+            }
+          ],
+          "unknowns": [],
+          "videos": [],
+          "processedCastText": "- Numbers Protocol: Decentralized Content Provenance (2024): https://www.numbersprotocol.io/\n- Setting the Standard for Content Attribution (2020): https://contentauthenticity.org/blog/cai-achieves-milestone-white-paper-sets-the-standard-for-content-attribution\n- Starling Lab for Data Integrity (2024) https://starlinglab.org",
+          "groupInvites": []
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0x17849669e3567481ec0d689878718622b838a08d",
+        "threadHash": "0xb29c6155e8beba4f786ffd53f252ca28bcd66ce6",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "It depends on what you try to achieve. 😊 \n\nYou can go quite far with SQL and protocol knowledge if you are doing ad-hoc analysis & dashboards.\n\nDo you have a specific project in mind?",
+        "timestamp": 1746681230000,
+        "replies": {
+          "count": 0
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentHash": "0xb29c6155e8beba4f786ffd53f252ca28bcd66ce6",
+        "parentAuthor": {
+          "fid": 1025347,
+          "displayName": "Esther Naisimoi",
+          "profile": {
+            "bio": {
+              "text": "DATA | AiML | Datascience",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            },
+            "newUserBadge": false
+          },
+          "followerCount": 49,
+          "followingCount": 114,
+          "username": "essiebx",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/c32da51c-4e0f-4969-d13c-95fdd2952c00/rectcrop3",
+            "verified": false
+          }
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0xeecdf53082fb462245d068a02f113f6fbecb0a7c",
+        "threadHash": "0xa5305d707d8bfc0de7c21d66d9f5b9432a708e57",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "- \"What is Web3? - Web3 Explained\": https://aws.amazon.com/what-is/web3/\n- \"Blockchain Facts: What Is It, How It Works, and How It Can Be Used\" by @Adam_Hayes_1: https://www.investopedia.com/terms/b/blockchain.asp",
+        "timestamp": 1746680894000,
+        "replies": {
+          "count": 0
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentHash": "0xa5305d707d8bfc0de7c21d66d9f5b9432a708e57",
+        "parentAuthor": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "embeds": {
+          "images": [],
+          "urls": [
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://aws.amazon.com/what-is/web3/",
+                "sourceUrl": "https://aws.amazon.com/what-is/web3/",
+                "title": "What is Web3? - Web3 Explained - AWS",
+                "description": "What is Web3, how and why businesses use Web3, and how to use Web3 with AWS.",
+                "domain": "aws.amazon.com",
+                "image": "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png",
+                "useLargeImage": false
+              }
+            },
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://www.investopedia.com/terms/b/blockchain.asp",
+                "sourceUrl": "https://www.investopedia.com/terms/b/blockchain.asp",
+                "title": "Blockchain Facts: What Is It, How It Works, and How It Can Be Used",
+                "description": "A blockchain is a digitally distributed, decentralized, public ledger that exists across a network. It is most noteworthy in its use with cryptocurrencies and NFTs.",
+                "domain": "investopedia.com",
+                "image": "https://www.investopedia.com/thmb/pzT2wbISy-wNtMypVlBjr39dydg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Blockchain_final-086b5b7b9ef74ecf9f20fe627dba1e34.png",
+                "useLargeImage": false
+              }
+            }
+          ],
+          "unknowns": [],
+          "videos": [],
+          "processedCastText": "- \"What is Web3? - Web3 Explained\": https://aws.amazon.com/what-is/web3/\n- \"Blockchain Facts: What Is It, How It Works, and How It Can Be Used\" by @Adam_Hayes_1:",
+          "groupInvites": []
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0xa5305d707d8bfc0de7c21d66d9f5b9432a708e57",
+        "threadHash": "0xa5305d707d8bfc0de7c21d66d9f5b9432a708e57",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "◼️3/100: Block-by-Block\n\nOne thing I learned about: Features of Web3 data.\n\nWeb3 data has many features I don't see with Web2.\n\n3 main ones:\n- Decentralized replication: Data lives on many nodes that don't trust each other.\n- Immutability: Once a blockchain is finalized, you cannot update it.\n- Transparency: Anyone can read the history of transactions.\n\n🔽🛠️Resources🔽",
+        "timestamp": 1746680893000,
+        "replies": {
+          "count": 1
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentSource": {
+          "type": "url",
+          "url": "https://farcaster.group/data"
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0x264a3dd46bca85ef01834d124a0fdf1d0e14a986",
+        "threadHash": "0xe4a1d72bfa15451fe1d3d64dd712a84d530ba967",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "I couldn't find an overall overview of Web3 data types. The following are useful, though:\n\n- \"Blockchain Data Deep Dive\": https://www.alchemy.com/overviews/blockchain-data\n- \"On-chain and off-chain data\": https://livebook.manning.com/book/blockchain-in-action/chapter-6/\n- \"What Is Offchain Data and Computation?\": https://chain.link/education-hub/off-chain-data",
+        "timestamp": 1746601849000,
+        "replies": {
+          "count": 0
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentHash": "0xe4a1d72bfa15451fe1d3d64dd712a84d530ba967",
+        "parentAuthor": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "embeds": {
+          "images": [],
+          "urls": [
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://www.alchemy.com/overviews/blockchain-data",
+                "sourceUrl": "https://www.alchemy.com/overviews/blockchain-data",
+                "title": "Blockchain Data Deep Dive",
+                "description": "This guide will cover all aspects of blockchain data, from onchain and offchain data, to blockchain indexing and subgraphs.",
+                "domain": "alchemy.com",
+                "image": "https://www.alchemy.com/api/og?variant=overview&title=Blockchain%20Data%20Deep%20Dive&token=8479106f076bb33626a765e43a43847eef6bec7624a4b7f0e01dc775b1dda5cf",
+                "useLargeImage": true
+              }
+            },
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://livebook.manning.com/book/blockchain-in-action/chapter-6/",
+                "sourceUrl": "https://livebook.manning.com/book/blockchain-in-action/chapter-6/",
+                "title": "6 On-chain and off-chain data · Blockchain in Action",
+                "description": "Exploring different kinds of on-chain data: blocks, transactions, receipts, and state · Defining, emitting, and logging events · Accessing event logs from transaction receipts to support Dapp operations · Designing and developing Dapps with on-chain and off-chain data · Demonstrating on-chain and off-chain data using ASK and blind auction Dapps",
+                "domain": "livebook.manning.com",
+                "image": "https://drek4537l1klr.cloudfront.net/ramamurthy/Figures/cover.jpg",
+                "useLargeImage": false
+              }
+            }
+          ],
+          "unknowns": [],
+          "videos": [],
+          "processedCastText": "I couldn't find an overall overview of Web3 data types. The following are useful, though:\n\n- \"Blockchain Data Deep Dive\": https://www.alchemy.com/overviews/blockchain-data\n- \"On-chain and off-chain data\": https://livebook.manning.com/book/blockchain-in-action/chapter-6/\n- \"What Is Offchain Data and Computation?\": https://chain.link/education-hub/off-chain-data",
+          "groupInvites": []
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0xe4a1d72bfa15451fe1d3d64dd712a84d530ba967",
+        "threadHash": "0xe4a1d72bfa15451fe1d3d64dd712a84d530ba967",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "◼️2/100: Block-by-Block\n\nOne thing I learned about: Web3 data can be many things.\n\nAnd, we can group them in many ways:\n1. On-chain vs Off-chain\n2. Domain (DeFi, DAO, NFT, DePi, DeSci)\n3. Platform (Ethereum, Solidity, Polkadot)\n4. Application (Analytics, App development, Machine learning models, Agents)\n\nMany ways to frame it. Many things to learn.\n\n🔽🛠️Resources🔽",
+        "timestamp": 1746601848000,
+        "replies": {
+          "count": 1
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentSource": {
+          "type": "url",
+          "url": "https://farcaster.group/data"
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0x1483d29e7b04188aebf60351d4899d5f7167cdb6",
+        "threadHash": "0x6ac7c339b1cdaf21f5355117bfacf4d55695e5a7",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "The following are not about data. They are about Python in Web3. Which is useful for Web3 data:\n\n- \"Web3.py learning resources\": https://web3py.readthedocs.io/en/stable/resources.html and Snakecharmers blog https://snakecharmers.ethereum.org/\n- \"Intro to Web3.py\": https://www.dappuniversity.com/articles/web3-py-intro \n- PyChain 2022 talks organized by: https://www.pychain.org/agenda",
+        "timestamp": 1746507503000,
+        "replies": {
+          "count": 0
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentHash": "0x6ac7c339b1cdaf21f5355117bfacf4d55695e5a7",
+        "parentAuthor": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "embeds": {
+          "images": [],
+          "urls": [
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://Web3.py",
+                "sourceUrl": "https://Web3.py",
+                "domain": "web3.py",
+                "useLargeImage": false
+              }
+            },
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://web3py.readthedocs.io/en/stable/resources.html",
+                "sourceUrl": "https://web3py.readthedocs.io/en/stable/resources.html",
+                "title": "Resources and Learning Material — web3.py 7.11.0 documentation",
+                "domain": "web3py.readthedocs.io",
+                "image": "https://web3py.readthedocs.io/en/stable/_static/banner/feedback.png",
+                "useLargeImage": false
+              }
+            }
+          ],
+          "unknowns": [],
+          "videos": [],
+          "processedCastText": "The following are not about data. They are about Python in Web3. Which is useful for Web3 data:\n\n- \"Web3.py learning resources\": https://web3py.readthedocs.io/en/stable/resources.html and Snakecharmers blog https://snakecharmers.ethereum.org/\n- \"Intro to Web3.py\": https://www.dappuniversity.com/articles/web3-py-intro \n- PyChain 2022 talks organized by: https://www.pychain.org/agenda",
+          "groupInvites": []
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0x6ac7c339b1cdaf21f5355117bfacf4d55695e5a7",
+        "threadHash": "0x6ac7c339b1cdaf21f5355117bfacf4d55695e5a7",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "◼️1/100: Block-by-Block\n\nOne thing I learned about: Web3 data dev resources are few.\n\nWeb3 data is niche. Developers have a hard time finding material to learn from.\n\nAfter days of research, I found these to be the most hands-on:\n- Primodata guides: https://primodata.org/guides.\n- Kamu Web3 data engineering tutorial: https://kamu.dev/blog/2024-08-28-intro-to-web3-data-engineering/\n\n🔽🛠️Resources🔽",
+        "timestamp": 1746507502000,
+        "replies": {
+          "count": 1
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentSource": {
+          "type": "url",
+          "url": "https://farcaster.group/data"
+        },
+        "embeds": {
+          "images": [],
+          "urls": [
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://primodata.org/guides",
+                "sourceUrl": "https://primodata.org/guides",
+                "title": "Blockchain Data Guides | Primo Data",
+                "description": "Tutorials, videos, GitHub repos, and other resources for analyzing & visualizing blockchain data.",
+                "domain": "primodata.org",
+                "image": "https://primodata.org/homepage.jpeg",
+                "useLargeImage": true
+              }
+            },
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://kamu.dev/blog/2024-08-28-intro-to-web3-data-engineering/",
+                "sourceUrl": "https://kamu.dev/blog/2024-08-28-intro-to-web3-data-engineering/",
+                "title": "Introduction to Web3 Data Engineering | Kamu Data",
+                "description": "Overview Why you should care\nWhat we will build\nFollowing along 1. Decentralized source data 1.1. Content Addressability\n1.2. Cryptographic ledgers and Merkle DAGs\n1.3. Immutability\n1.4. Identity and ownership\n1.5. Meanwhile in Web2 2. Verifiable derivative data 2.1. Verifiable computing\n2.2. Lineage & provenance\n2.3. Meanwhile in Web2 3. Global data sharing 3.1. Meanwhile in Web2 4. Using data on blockchains 4.1. Smart contract\n4.2. The Oracle Problem\n4.3. ODF Oracle\n4.4. Meanwhile in Web2 5. Analyzing bl…",
+                "domain": "kamu.dev",
+                "image": "https://www.kamu.dev/images/posts/2024-08-28-intro-to-web3-data-engineering/title.png",
+                "useLargeImage": false
+              }
+            }
+          ],
+          "unknowns": [],
+          "videos": [],
+          "processedCastText": "◼️1/100: Block-by-Block\n\nOne thing I learned about: Web3 data dev resources are few.\n\nWeb3 data is niche. Developers have a hard time finding material to learn from.\n\nAfter days of research, I found these to be the most hands-on:\n- Primodata guides: https://primodata.org/guides.\n- Kamu Web3 data engineering tutorial: https://kamu.dev/blog/2024-08-28-intro-to-web3-data-engineering/\n\n🔽🛠️Resources🔽",
+          "groupInvites": []
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0xb0588747c493e06844d002fc50f0039f7febe79e",
+        "threadHash": "0xb66a3f7e0bd9448ce6c6848b0d9f413e288eb675",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "Further tips for learning:\n\n- \"Teach & Learn Better With A 'Neuroplasticity Super Protocol'\"\nby @hubermanlab https://www.hubermanlab.com/newsletter/teach-and-learn-better-with-a-neuroplasticity-super-protocol\n- \"Learning How to Learn\" by https://barbaraoakley.com: https://www.youtube.com/watch?v=dOOlOUIrhHw\n- \"How to Learn ANYTHING Fast\" by @scotthyoung: https://www.youtube.com/watch?v=SAZIlz_TiQU",
+        "timestamp": 1746429010000,
+        "replies": {
+          "count": 0
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentHash": "0xb66a3f7e0bd9448ce6c6848b0d9f413e288eb675",
+        "parentAuthor": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "mentions": [
+          {
+            "fid": 683878,
+            "displayName": "hubermanlab\r\n",
+            "profile": {
+              "bio": {
+                "text": "",
+                "mentions": [],
+                "channelMentions": []
+              },
+              "location": {
+                "placeId": "",
+                "description": ""
+              }
+            },
+            "followerCount": 4,
+            "followingCount": 115,
+            "username": "hubermanlab",
+            "pfp": {
+              "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/9679d805-f142-4596-1c00-96d3e07c4b00/rectcrop3",
+              "verified": false
+            }
+          }
+        ],
+        "embeds": {
+          "images": [],
+          "urls": [
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://www.hubermanlab.com/newsletter/teach-and-learn-better-with-a-neuroplasticity-super-protocol",
+                "sourceUrl": "https://www.hubermanlab.com/newsletter/teach-and-learn-better-with-a-neuroplasticity-super-protocol",
+                "title": "Teach & Learn Better With A “Neuroplasticity Super Protocol”",
+                "description": "In this issue of the Neural Network Newsletter, I describe how you can teach and letter better using a “Neuroplasticity Super-Protocol”.",
+                "domain": "hubermanlab.com",
+                "image": "https://cdn.prod.website-files.com/64751ad903a904b42aa4adc1/64e8d475fa432664c0322732_64c1a093ffe477920c4745b9_neural-network-neuroplasticity.avif",
+                "useLargeImage": true
+              }
+            },
+            {
+              "type": "url",
+              "openGraph": {
+                "url": "https://barbaraoakley.com",
+                "sourceUrl": "https://barbaraoakley.com",
+                "title": "Welcome - Barbara Oakley",
+                "description": "I love to bring fresh perspectives into my books by applying knowledge and experience from many different disciplines, as well as from “real world” experiences. Although I’m now a professor of engineering, I’ve also worked in lots of different places and doing very different things: serving as a Russian translator on Soviet trawlers up in... Read more »",
+                "domain": "barbaraoakley.com",
+                "image": "https://barbaraoakley.com/wp-content/uploads/2022/09/Oakley_cropped-scaled.jpg",
+                "useLargeImage": true
+              }
+            }
+          ],
+          "unknowns": [],
+          "videos": [],
+          "processedCastText": "Further tips for learning:\n\n- \"Teach & Learn Better With A 'Neuroplasticity Super Protocol'\"\nby @hubermanlab https://www.hubermanlab.com/newsletter/teach-and-learn-better-with-a-neuroplasticity-super-protocol\n- \"Learning How to Learn\" by https://barbaraoakley.com: https://www.youtube.com/watch?v=dOOlOUIrhHw\n- \"How to Learn ANYTHING Fast\" by @scotthyoung: https://www.youtube.com/watch?v=SAZIlz_TiQU",
+          "groupInvites": []
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      },
+      {
+        "hash": "0xb66a3f7e0bd9448ce6c6848b0d9f413e288eb675",
+        "threadHash": "0xb66a3f7e0bd9448ce6c6848b0d9f413e288eb675",
+        "author": {
+          "fid": 967464,
+          "displayName": "András Novoszáth",
+          "profile": {
+            "bio": {
+              "text": "Learn & build with web3 data: https://skool.com/data3",
+              "mentions": [],
+              "channelMentions": []
+            },
+            "location": {
+              "placeId": "",
+              "description": ""
+            }
+          },
+          "followerCount": 1,
+          "followingCount": 5,
+          "username": "nocibambi",
+          "pfp": {
+            "url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/ba9323d9-85a7-4e3a-b832-48a49ece5600/original",
+            "verified": false
+          }
+        },
+        "text": "◼️0/100: Block-by-Block\n\nOne thing I learned about: Posting helps you learn.\n\nLearning takes time, so I try to do it effectively.\n\n4 things that help:\n- Chunk: Break down complex topics into manageable chunks\n- Do it regularly: Spacing out helps you with retention\n- Write about it: It forces you to understand it better\n- Get feedback: You will know if you are wrong fast\n\nI am learning about Web3 Data. I will post here the things I learn in the following days.\n\n🔽🛠️Resources🔽",
+        "timestamp": 1746429010000,
+        "replies": {
+          "count": 1
+        },
+        "reactions": {
+          "count": 0
+        },
+        "recasts": {
+          "count": 0,
+          "recasters": []
+        },
+        "watches": {
+          "count": 0
+        },
+        "parentSource": {
+          "type": "url",
+          "url": "https://farcaster.group/data"
+        },
+        "tags": [
+          {
+            "type": "channel",
+            "id": "data",
+            "name": "Data",
+            "imageUrl": "https://warpcast.com/~/channel-images/data.png"
+          }
+        ],
+        "quoteCount": 0,
+        "combinedRecastCount": 0,
+        "channel": {
+          "key": "data",
+          "name": "Data",
+          "imageUrl": "https://warpcast.com/~/channel-images/data.png",
+          "authorContext": {
+            "role": "none",
+            "restricted": false,
+            "banned": false
+          },
+          "authorRole": "none"
+        }
+      }
+    ]
+  }
+}
