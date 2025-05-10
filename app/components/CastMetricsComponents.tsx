@@ -51,7 +51,7 @@ export default function CastStatsTable() {
         <div>Loading...</div>
       ) : (
         <div className="overflow-x-auto w-full">
-          <table className="w-full min-w-[1200px] border border-gray-200 rounded-lg bg-[var(--app-card-bg)]">
+          <table className="w-full min-w-[1800px] border border-gray-200 rounded-lg bg-[var(--app-card-bg)]">
             <thead>
               <tr className="bg-[var(--app-card-border)]">
                 <th className="px-6 py-2 text-left">Time</th>
@@ -64,8 +64,8 @@ export default function CastStatsTable() {
             <tbody>
               {casts.map((cast) => (
                 <tr key={cast.hash} className="border-t border-[var(--app-card-border)]">
-                  <td className="px-6 py-2 whitespace-nowrap">{formatDate(cast.timestamp)}</td>
-                  <td className="px-6 py-2 max-w-2xl truncate" title={cast.text}>
+                  <td className="px-6 py-2 max-w-[25px] whitespace-nowrap">{formatDate(cast.timestamp)}</td>
+                  <td className="px-6 py-2 max-w-[50px] truncate" title={cast.text}>
                     {cast.text.split("\n")[0].slice(0, 80)}
                   </td>
                   <td className="px-6 py-2 text-center">{cast.reactions.count}</td>
