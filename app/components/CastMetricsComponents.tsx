@@ -27,14 +27,17 @@ export default function CastStatsTable() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Replace with your actual API endpoint
-    const token = process.env.NEXT_PUBLIC_WARPCAST_API_TOKEN;
+    // Farcaster authentication headers from env
+    const FARCASTER_HEADER = process.env.NEXT_PUBLIC_FARCASTER_HEADER || process.env.FARCASTER_HEADER;
+    const FARCASTER_PAYLOAD = process.env.NEXT_PUBLIC_FARCASTER_PAYLOAD || process.env.FARCASTER_PAYLOAD;
+    const FARCASTER_SIGNATURE = process.env.NEXT_PUBLIC_FARCASTER_SIGNATURE || process.env.FARCASTER_SIGNATURE;
+
     fetch("https://client.warpcast.com/v2/casts?fid=967464&limit=15", {
-      headers: token
-        ? {
-            Authorization: `Bearer ${token}`,
-          }
-        : {},
+      headers: {
+        ...(FARCASTER_HEADER && { "Farcaster-Header": FARCASTER_HEADER }),
+        ...(FARCASTER_PAYLOAD && { "Farcaster-Payload": FARCASTER_PAYLOAD }),
+        ...(FARCASTER_SIGNATURE && { "Farcaster-Signature": FARCASTER_SIGNATURE }),
+      },
     })
       .then((res) => res.json())
       .then((data: ApiResponse) => {
