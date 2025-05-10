@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# warpcast-analytics
-Warpcast MiniApp for analytics of your content
-=======
+
 # MiniKit Template
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-onchain --mini`](), configured with:
@@ -14,6 +11,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-oncha
 ## Getting Started
 
 1. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -55,6 +53,7 @@ REDIS_TOKEN=
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -62,21 +61,26 @@ npm run dev
 ## Template Features
 
 ### Frame Configuration
+
 - `.well-known/farcaster.json` endpoint configured for Frame metadata and account association
 - Frame metadata automatically added to page headers in `layout.tsx`
 
 ### Background Notifications
+
 - Redis-backed notification system using Upstash
 - Ready-to-use notification endpoints in `api/notify` and `api/webhook`
 - Notification client utilities in `lib/notification-client.ts`
 
 ### Theming
+
 - Custom theme defined in `theme.css` with OnchainKit variables
 - Pixel font integration with Pixelify Sans
 - Dark/light mode support through OnchainKit
 
 ### MiniKit Provider
+
 The app is wrapped with `MiniKitProvider` in `providers.tsx`, configured with:
+
 - OnchainKit integration
 - Access to Frames context
 - Sets up Wagmi Connectors
@@ -106,4 +110,3 @@ To get started building your own frame, follow these steps:
 - [OnchainKit Documentation](https://docs.base.org/builderkits/onchainkit/getting-started)
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
->>>>>>> a5ad0ca (First commit)
