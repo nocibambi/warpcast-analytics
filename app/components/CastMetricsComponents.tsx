@@ -28,7 +28,14 @@ export default function CastStatsTable() {
 
   useEffect(() => {
     // Replace with your actual API endpoint
-    fetch("https://client.warpcast.com/v2/casts?fid=967464&limit=15")
+    const token = process.env.NEXT_PUBLIC_WARPCAST_API_TOKEN;
+    fetch("https://client.warpcast.com/v2/casts?fid=967464&limit=15", {
+      headers: token
+        ? {
+            Authorization: `Bearer ${token}`,
+          }
+        : {},
+    })
       .then((res) => res.json())
       .then((data: ApiResponse) => {
         setCasts(data.result.casts);
