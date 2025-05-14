@@ -28,16 +28,19 @@ export default function CastStatsTable() {
 
   useEffect(() => {
     // Farcaster authentication headers from env
-    const FARCASTER_HEADER = process.env.NEXT_PUBLIC_FARCASTER_HEADER || process.env.FARCASTER_HEADER;
-    const FARCASTER_PAYLOAD = process.env.NEXT_PUBLIC_FARCASTER_PAYLOAD || process.env.FARCASTER_PAYLOAD;
-    const FARCASTER_SIGNATURE = process.env.NEXT_PUBLIC_FARCASTER_SIGNATURE || process.env.FARCASTER_SIGNATURE;
+    const FARCASTER_HEADER = process.env.FARCASTER_HEADER;
+    const FARCASTER_PAYLOAD = process.env.FARCASTER_PAYLOAD;
+    const FARCASTER_SIGNATURE = process.env.FARCASTER_SIGNATURE;
 
-    fetch("https://client.warpcast.com/v2/casts?fid=967464&limit=15", {
-      headers: {
-        ...(FARCASTER_HEADER && { "Farcaster-Header": FARCASTER_HEADER }),
-        ...(FARCASTER_PAYLOAD && { "Farcaster-Payload": FARCASTER_PAYLOAD }),
-        ...(FARCASTER_SIGNATURE && { "Farcaster-Signature": FARCASTER_SIGNATURE }),
-      },
+    // const url = "https://client.warpcast.com/v2/casts?fid=967464&limit=15";
+    const url = "https://hoyt.farcaster.xyz:2281/v1/castsByFid?fid=967464"
+
+    fetch(url, {
+      // headers: {
+      //   ...(FARCASTER_HEADER && { "Farcaster-Header": FARCASTER_HEADER }),
+      //   ...(FARCASTER_PAYLOAD && { "Farcaster-Payload": FARCASTER_PAYLOAD }),
+      //   ...(FARCASTER_SIGNATURE && { "Farcaster-Signature": FARCASTER_SIGNATURE }),
+      // },
     })
       .then((res) => res.json())
       .then((data: ApiResponse) => {
