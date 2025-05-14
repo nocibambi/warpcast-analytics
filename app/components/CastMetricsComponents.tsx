@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 
+// New Cast type based on new API structure
 type Cast = {
   hash: string;
   timestamp: number;
@@ -11,14 +12,24 @@ type Cast = {
   recasts: { count: number };
 };
 
-type ApiResponse = {
-  result: {
-    casts: Cast[];
+type Message = {
+  data: {
+    type: string;
+    timestamp: number;
+    castAddBody?: {
+      text: string;
+    };
   };
+  hash: string;
+};
+
+type ApiResponse = {
+  messages: Message[];
 };
 
 function formatDate(ts: number) {
-  const d = new Date(ts);
+  // The new timestamp is likely in seconds, convert to ms if needed
+  const d = new Date(ts * 1000);
   return d.toLocaleString();
 }
 
@@ -27,24 +38,23 @@ export default function CastStatsTable() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Farcaster authentication headers from env
-    const FARCASTER_HEADER = process.env.FARCASTER_HEADER;
-    const FARCASTER_PAYLOAD = process.env.FARCASTER_PAYLOAD;
-    const FARCASTER_SIGNATURE = process.env.FARCASTER_SIGNATURE;
+    const url = "https://hoyt.farcaster.xyz:2281/v1/castsByFid?fid=967464";
 
-    // const url = "https://client.warpcast.com/v2/casts?fid=967464&limit=15";
-    const url = "https://hoyt.farcaster.xyz:2281/v1/castsByFid?fid=967464"
-
-    fetch(url, {
-      // headers: {
-      //   ...(FARCASTER_HEADER && { "Farcaster-Header": FARCASTER_HEADER }),
-      //   ...(FARCASTER_PAYLOAD && { "Farcaster-Payload": FARCASTER_PAYLOAD }),
-      //   ...(FARCASTER_SIGNATURE && { "Farcaster-Signature": FARCASTER_SIGNATURE }),
-      // },
-    })
+    fetch(url)
       .then((res) => res.json())
       .then((data: ApiResponse) => {
-        setCasts(data.result.casts);
+        // Parse new structure: filter for MESSAGE_TYPE_CAST_ADD
+        const parsedCasts: Cast[] = (data.messages || [])
+          .filter((msg) => msg.data.type === "MESSAGE_TYPE_CAST_ADD")
+          .map((msg) => ({
+            hash: msg.hash,
+            timestamp: msg.data.timestamp,
+            text: msg.data.castAddBody?.text || "",
+            reactions: { count: 0 }, // No reactions in new structure, set to 0 or parse if available
+            replies: { count: 0 },   // No replies in new structure, set to 0 or parse if available
+            recasts: { count: 0 },   // No recasts in new structure, set to 0 or parse if available
+          }));
+        setCasts(parsedCasts);
         setLoading(false);
       })
       .catch(() => setLoading(false));
