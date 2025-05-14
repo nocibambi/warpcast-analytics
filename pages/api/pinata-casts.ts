@@ -24,12 +24,47 @@ export default async function handler(
 
   const castsData = await castsResponse.json();
 
-  // 2. For each cast, filter out replies to other users' casts
-  const messages = (castsData.messages || []).filter((msg: any) => {
-    if (msg.data?.type !== "MESSAGE_TYPE_CAST_ADD") return false;
+  // 2. Filter to only MESSAGE_TYPE_CAST_ADD from this user
+  const allCasts = (castsData.messages || []).filter((msg: any) => {
+    return msg.data?.type === "MESSAGE_TYPE_CAST_ADD";
+  });
+
+  // Build a map from hash to cast for easy lookup
+  const castMap = new Map<string, any>();
+  allCasts.forEach((msg: any) => {
+    castMap.set(msg.hash, msg);
+  });
+
+  // Find root casts (no parent or parent is not from this user)
+  const rootCasts = allCasts.filter((msg: any) => {
     const parentCastId = msg.data.castAddBody?.parentCastId;
-    // Keep if not a reply, or if replying to own cast
-    return !parentCastId || parentCastId.fid === fid;
+    return !parentCastId || parentCastId.fid !== fid;
+  });
+
+  // For each cast, find its thread root
+  function findThreadRoot(msg: any): any {
+    let current = msg;
+    while (true) {
+      const parentCastId = current.data.castAddBody?.parentCastId;
+      if (!parentCastId) return current;
+      if (parentCastId.fid !== fid) return current;
+      const parent = castMap.get(parentCastId.hash);
+      if (!parent) return current;
+      current = parent;
+    }
+  }
+
+  // Group casts by thread root hash
+  const threadsMap = new Map<string, any[]>();
+  allCasts.forEach((msg: any) => {
+    const root = findThreadRoot(msg);
+    const rootHash = root.hash;
+    // Only group threads where the root cast is NOT a reply to another user's cast
+    const parentCastId = root.data.castAddBody?.parentCastId;
+    if (!parentCastId || parentCastId.fid === fid) {
+      if (!threadsMap.has(rootHash)) threadsMap.set(rootHash, []);
+      threadsMap.get(rootHash)!.push(msg);
+    }
   });
 
   // Helper to fetch reactions for a cast hash
@@ -41,31 +76,41 @@ export default async function handler(
         authorization: `Bearer ${jwt}`,
       },
     });
-    if (!resp.ok) return { likes: 0, recasts: 0, replies: 0 };
+    if (!resp.ok) return { likes: 0, recasts: 0 };
     const data = await resp.json();
-    // Count reactions by type
     let likes = 0,
-      recasts = 0,
-      replies = 0;
+      recasts = 0;
     for (const r of data.reactions || []) {
       if (r.type === "REACTION_TYPE_LIKE") likes++;
       if (r.type === "REACTION_TYPE_RECAST") recasts++;
     }
-    // Replies are not included in reactions, so keep as 0
-    return { likes, recasts, replies };
+    return { likes, recasts };
   }
 
-  // 3. Fetch reactions in parallel (limit concurrency if needed)
+  // For each thread, aggregate reactions and replies
   const results = await Promise.all(
-    messages.map(async (msg: any) => {
-      const { likes, recasts, replies } = await fetchReactions(msg.hash);
+    Array.from(threadsMap.entries()).map(async ([rootHash, threadCasts]) => {
+      // Aggregate reactions and recasts for all casts in the thread
+      let totalLikes = 0,
+        totalRecasts = 0;
+      await Promise.all(
+        threadCasts.map(async (msg: any) => {
+          const { likes, recasts } = await fetchReactions(msg.hash);
+          totalLikes += likes;
+          totalRecasts += recasts;
+        }),
+      );
+      // Replies = thread length - 1 (excluding root)
+      const replies = threadCasts.length - 1;
+      // Use root cast info for display
+      const root = castMap.get(rootHash);
       return {
-        hash: msg.hash,
-        timestamp: msg.data.timestamp,
-        text: msg.data.castAddBody?.text ?? "",
-        reactions: { count: likes },
+        hash: root.hash,
+        timestamp: root.data.timestamp,
+        text: root.data.castAddBody?.text ?? "",
+        reactions: { count: totalLikes },
         replies: { count: replies },
-        recasts: { count: recasts },
+        recasts: { count: totalRecasts },
       };
     }),
   );
