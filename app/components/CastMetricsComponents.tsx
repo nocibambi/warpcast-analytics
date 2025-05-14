@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 
-// New Cast type based on new API structure
 type Cast = {
   hash: string;
   timestamp: number;
@@ -12,24 +11,25 @@ type Cast = {
   recasts: { count: number };
 };
 
-type Message = {
-  data: {
-    type: string;
-    timestamp: number;
-    castAddBody?: {
-      text: string;
-    };
-  };
+type PinataCast = {
   hash: string;
+  timestamp: number;
+  text: string;
+  reactions?: { count: number };
+  replies?: { count: number };
+  recasts?: { count: number };
+  // ...other fields...
 };
 
-type ApiResponse = {
-  messages: Message[];
+type PinataApiResponse = {
+  result: {
+    casts: PinataCast[];
+  };
 };
 
 function formatDate(ts: number) {
-  // The new timestamp is likely in seconds, convert to ms if needed
-  const d = new Date(ts * 1000);
+  // Pinata timestamp is in ms
+  const d = new Date(ts);
   return d.toLocaleString();
 }
 
@@ -38,22 +38,25 @@ export default function CastStatsTable() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const url = "https://hoyt.farcaster.xyz:2281/v1/castsByFid?fid=967464";
+    const url = "https://hub.pinata.cloud/v1/castsByFid?fid=967464";
+    const jwt = process.env.NEXT_PUBLIC_PINATA_API_JWT; // Set this in your environment variables
 
-    fetch(url)
+    fetch(url, {
+      headers: {
+        accept: "application/json",
+        authorization: `Bearer ${jwt}`,
+      },
+    })
       .then((res) => res.json())
-      .then((data: ApiResponse) => {
-        // Parse new structure: filter for MESSAGE_TYPE_CAST_ADD
-        const parsedCasts: Cast[] = (data.messages || [])
-          .filter((msg) => msg.data.type === "MESSAGE_TYPE_CAST_ADD")
-          .map((msg) => ({
-            hash: msg.hash,
-            timestamp: msg.data.timestamp,
-            text: msg.data.castAddBody?.text || "",
-            reactions: { count: 0 }, // No reactions in new structure, set to 0 or parse if available
-            replies: { count: 0 },   // No replies in new structure, set to 0 or parse if available
-            recasts: { count: 0 },   // No recasts in new structure, set to 0 or parse if available
-          }));
+      .then((data: PinataApiResponse) => {
+        const parsedCasts: Cast[] = (data.result?.casts || []).map((cast) => ({
+          hash: cast.hash,
+          timestamp: cast.timestamp,
+          text: cast.text,
+          reactions: { count: cast.reactions?.count ?? 0 },
+          replies: { count: cast.replies?.count ?? 0 },
+          recasts: { count: cast.recasts?.count ?? 0 },
+        }));
         setCasts(parsedCasts);
         setLoading(false);
       })
