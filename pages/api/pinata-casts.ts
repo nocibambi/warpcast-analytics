@@ -24,10 +24,13 @@ export default async function handler(
 
   const castsData = await castsResponse.json();
 
-  // 2. For each cast, fetch reactions
-  const messages = (castsData.messages || []).filter(
-    (msg: any) => msg.data?.type === "MESSAGE_TYPE_CAST_ADD"
-  );
+  // 2. For each cast, filter out replies to other users' casts
+  const messages = (castsData.messages || []).filter((msg: any) => {
+    if (msg.data?.type !== "MESSAGE_TYPE_CAST_ADD") return false;
+    const parentCastId = msg.data.castAddBody?.parentCastId;
+    // Keep if not a reply, or if replying to own cast
+    return !parentCastId || parentCastId.fid === fid;
+  });
 
   // Helper to fetch reactions for a cast hash
   async function fetchReactions(hash: string) {
@@ -41,7 +44,9 @@ export default async function handler(
     if (!resp.ok) return { likes: 0, recasts: 0, replies: 0 };
     const data = await resp.json();
     // Count reactions by type
-    let likes = 0, recasts = 0, replies = 0;
+    let likes = 0,
+      recasts = 0,
+      replies = 0;
     for (const r of data.reactions || []) {
       if (r.type === "REACTION_TYPE_LIKE") likes++;
       if (r.type === "REACTION_TYPE_RECAST") recasts++;
@@ -62,7 +67,7 @@ export default async function handler(
         replies: { count: replies },
         recasts: { count: recasts },
       };
-    })
+    }),
   );
 
   res.status(200).json({ casts: results });
