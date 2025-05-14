@@ -11,20 +11,8 @@ type Cast = {
   recasts: { count: number };
 };
 
-type PinataCast = {
-  hash: string;
-  timestamp: number;
-  text: string;
-  reactions?: { count: number };
-  replies?: { count: number };
-  recasts?: { count: number };
-  // ...other fields...
-};
-
 type PinataApiResponse = {
-  result: {
-    casts: PinataCast[];
-  };
+  casts: Cast[];
 };
 
 function formatDate(ts: number) {
@@ -38,26 +26,12 @@ export default function CastStatsTable() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const url = "https://hub.pinata.cloud/v1/castsByFid?fid=967464";
-    const jwt = process.env.NEXT_PUBLIC_PINATA_API_JWT; // Set this in your environment variables
+    const url = "/api/pinata-casts";
 
-    fetch(url, {
-      headers: {
-        accept: "application/json",
-        authorization: `Bearer ${jwt}`,
-      },
-    })
+    fetch(url)
       .then((res) => res.json())
       .then((data: PinataApiResponse) => {
-        const parsedCasts: Cast[] = (data.result?.casts || []).map((cast) => ({
-          hash: cast.hash,
-          timestamp: cast.timestamp,
-          text: cast.text,
-          reactions: { count: cast.reactions?.count ?? 0 },
-          replies: { count: cast.replies?.count ?? 0 },
-          recasts: { count: cast.recasts?.count ?? 0 },
-        }));
-        setCasts(parsedCasts);
+        setCasts(data.casts || []);
         setLoading(false);
       })
       .catch(() => setLoading(false));
