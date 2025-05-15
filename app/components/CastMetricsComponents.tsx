@@ -58,7 +58,7 @@ export default function CastStatsTable() {
               <tr className="bg-[var(--app-card-border)] text-sm">
                 <th className="px-2 py-1 text-left">Time</th>
                 <th className="px-2 py-1 text-left">Post</th>
-                <th className="px-2 py-1 text-center">📊</th>
+                <th className="px-2 py-1 text-center">Stats</th>
               </tr>
             </thead>
             <tbody>
@@ -71,9 +71,9 @@ export default function CastStatsTable() {
                     {cast.text.split("\n")[0].slice(0, 40)}
                   </td>
                   <td className="px-2 py-1 text-center whitespace-nowrap">
-                    <span title="Likes">❤️ {cast.reactions.count}</span>{' '}
-                    <span title="Replies">💬 {cast.replies.count}</span>{' '}
-                    <span title="Recasts">🔄 {cast.recasts.count}</span>
+                    <span title="Likes">♡ {cast.reactions.count}</span>{' '}
+                    <span title="Replies">◎ {cast.replies.count}</span>{' '}
+                    <span title="Recasts">↺ {cast.recasts.count}</span>
                   </td>
                 </tr>
               ))}
