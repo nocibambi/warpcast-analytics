@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import { getUsernameFromFid } from "@/lib/user";
 
 // Types for Pinata Casts and Reactions
 interface CastAddBody {
@@ -125,9 +126,11 @@ export default async function handler(
       const replies = threadCasts.length - 1;
       // Use root cast info for display
       const root = castMap.get(rootHash)!;
+      const username = await getUsernameFromFid(fid);
+
       return {
         hash: root.hash,
-        username: "nocibambi", // Add username to response
+        username, // Now using dynamically fetched username
         timestamp: root.data.timestamp * 1000,
         text: root.data.castAddBody?.text ?? "",
         reactions: { count: totalLikes },
