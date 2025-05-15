@@ -1,24 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { validateFrameMessage } from '@farcaster/core';
-
-interface FrameRequest {
-  trustedData?: {
-    messageBytes: string;
-  };
-  untrustedData: {
-    fid: number;
-    url: string;
-    messageHash: string;
-    timestamp: number;
-    network: number;
-    buttonIndex: number;
-    inputText: string;
-    castId: {
-      fid: number;
-      hash: string;
-    };
-  };
-}
 
 // Types for Pinata Casts and Reactions
 interface CastAddBody {
@@ -49,27 +29,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
-  // Validate frame and get user info
-  const body = req.body as FrameRequest;
-  if (!body?.untrustedData?.fid) {
-    return res.status(400).json({ error: "Invalid request" });
-  }
-
-  const fid = body.untrustedData.fid;
   const jwt = process.env.NEXT_PUBLIC_PINATA_API_JWT;
   const baseUrl = "https://hub.pinata.cloud/v1";
-
-  // Get user profile to get username
-  const userProfileUrl = `${baseUrl}/profile?fid=${fid}`;
-  const userProfileResp = await fetch(userProfileUrl, {
-    headers: {
-      accept: "application/json",
-      authorization: `Bearer ${jwt}`,
-    },
-  });
-  
-  const userProfile = await userProfileResp.json();
-  const username = userProfile.username || `user_${fid}`;
+  const fid = 967464;
 
   // 1. Fetch all casts
   const castsUrl = `${baseUrl}/castsByFid?fid=${fid}`;
@@ -165,7 +127,7 @@ export default async function handler(
       const root = castMap.get(rootHash)!;
       return {
         hash: root.hash,
-        username, // Use dynamic username
+        username: "nocibambi", // Add username to response
         timestamp: root.data.timestamp * 1000,
         text: root.data.castAddBody?.text ?? "",
         reactions: { count: totalLikes },
