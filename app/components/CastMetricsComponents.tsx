@@ -16,9 +16,20 @@ type PinataApiResponse = {
 };
 
 function formatDate(ts: number) {
-  // Pinata timestamp is in ms
-  const d = new Date(ts);
-  return d.toLocaleString();
+  // The timestamp is already milliseconds since Jan 1, 2021
+  const FARCASTER_EPOCH_MS = 1609459200000;
+  const finalTimestamp = FARCASTER_EPOCH_MS + ts;
+  
+  const d = new Date(finalTimestamp);
+  return d.toLocaleString("en-GB", {
+    timeZone: "Europe/Budapest",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
 }
 
 export default function CastStatsTable() {
