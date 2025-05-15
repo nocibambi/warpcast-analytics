@@ -1,5 +1,24 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
+interface FrameRequest {
+  trustedData?: {
+    messageBytes: string;
+  };
+  untrustedData: {
+    fid: number;
+    url: string;
+    messageHash: string;
+    timestamp: number;
+    network: number;
+    buttonIndex: number;
+    inputText: string;
+    castId: {
+      fid: number;
+      hash: string;
+    };
+  };
+}
+
 // Types for Pinata Casts and Reactions
 interface CastAddBody {
   text?: string;
@@ -29,6 +48,8 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
+  // For local development, use a default FID
+  // In production, this would come from frame validation
   const fid = process.env.DEFAULT_FID || "967464";
   const jwt = process.env.NEXT_PUBLIC_PINATA_API_JWT;
   const baseUrl = "https://hub.pinata.cloud/v1";
