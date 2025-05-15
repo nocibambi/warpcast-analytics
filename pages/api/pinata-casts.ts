@@ -127,7 +127,7 @@ export default async function handler(
       const root = castMap.get(rootHash)!;
       return {
         hash: root.hash,
-        // Convert timestamp from seconds to milliseconds
+        username: "nocibambi", // Add username to response
         timestamp: root.data.timestamp * 1000,
         text: root.data.castAddBody?.text ?? "",
         reactions: { count: totalLikes },

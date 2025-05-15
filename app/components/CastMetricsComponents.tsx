@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 type Cast = {
   hash: string;
+  username: string; // Add username field
   timestamp: number;
   text: string;
   reactions: { count: number };
@@ -68,7 +69,14 @@ export default function CastStatsTable() {
                     {formatDate(cast.timestamp)}
                   </td>
                   <td className="px-2 py-1 max-w-[140px] truncate" title={cast.text}>
-                    {cast.text.split("\n")[0].slice(0, 40)}
+                    <a 
+                      href={`https://warpcast.com/${cast.username}/${cast.hash}`}
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:underline text-[var(--app-link)]"
+                    >
+                      {cast.text.split("\n")[0].slice(0, 40)}
+                    </a>
                   </td>
                   <td className="px-2 py-1 text-center whitespace-nowrap">
                     <span title="Likes">♡ {cast.reactions.count}</span>{' '}
