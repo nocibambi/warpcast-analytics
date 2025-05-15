@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import { validateFrameMessage } from '@farcaster/core';
 
 interface FrameRequest {
   trustedData?: {
@@ -48,9 +49,13 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
-  // For local development, use a default FID
-  // In production, this would come from frame validation
-  const fid = process.env.DEFAULT_FID || "967464";
+  // Validate frame and get user info
+  const body = req.body as FrameRequest;
+  if (!body?.untrustedData?.fid) {
+    return res.status(400).json({ error: "Invalid request" });
+  }
+
+  const fid = body.untrustedData.fid;
   const jwt = process.env.NEXT_PUBLIC_PINATA_API_JWT;
   const baseUrl = "https://hub.pinata.cloud/v1";
 
@@ -62,7 +67,7 @@ export default async function handler(
       authorization: `Bearer ${jwt}`,
     },
   });
-
+  
   const userProfile = await userProfileResp.json();
   const username = userProfile.username || `user_${fid}`;
 
