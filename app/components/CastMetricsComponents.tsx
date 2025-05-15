@@ -16,19 +16,17 @@ type PinataApiResponse = {
 };
 
 function formatDate(ts: number) {
-  // The timestamp is already milliseconds since Jan 1, 2021
   const FARCASTER_EPOCH_MS = 1609459200000;
   const finalTimestamp = FARCASTER_EPOCH_MS + ts;
   
   const d = new Date(finalTimestamp);
+  // Shorter date format for mobile
   return d.toLocaleString("en-GB", {
     timeZone: "Europe/Budapest",
-    year: "numeric",
     month: "2-digit",
     day: "2-digit",
     hour: "2-digit",
     minute: "2-digit",
-    second: "2-digit",
   });
 }
 
@@ -49,32 +47,34 @@ export default function CastStatsTable() {
   }, []);
 
   return (
-    <div className="p-6 w-full max-w-[1800px] mx-auto">
-      <h2 className="text-xl font-semibold mb-4">Post Statistics</h2>
+    <div className="p-2 w-full mx-auto">
+      <h2 className="text-lg font-semibold mb-2">Post Statistics</h2>
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <div className="overflow-x-auto w-full">
-          <table className="w-full min-w-[1800px] border border-gray-200 rounded-lg bg-[var(--app-card-bg)]">
+        <div className="overflow-x-auto">
+          <table className="w-full border border-gray-200 rounded-lg bg-[var(--app-card-bg)]">
             <thead>
-              <tr className="bg-[var(--app-card-border)]">
-                <th className="px-6 py-2 text-left">Time</th>
-                <th className="px-6 py-2 text-left">Title</th>
-                <th className="px-6 py-2 text-center">Reactions</th>
-                <th className="px-6 py-2 text-center">Replies</th>
-                <th className="px-6 py-2 text-center">Recasts</th>
+              <tr className="bg-[var(--app-card-border)] text-sm">
+                <th className="px-2 py-1 text-left">Time</th>
+                <th className="px-2 py-1 text-left">Post</th>
+                <th className="px-2 py-1 text-center">📊</th>
               </tr>
             </thead>
             <tbody>
               {casts.map((cast) => (
-                <tr key={cast.hash} className="border-t border-[var(--app-card-border)]">
-                  <td className="px-6 py-2 max-w-[25px] whitespace-nowrap">{formatDate(cast.timestamp)}</td>
-                  <td className="px-6 py-2 max-w-[50px] truncate" title={cast.text}>
-                    {cast.text.split("\n")[0].slice(0, 80)}
+                <tr key={cast.hash} className="border-t border-[var(--app-card-border)] text-sm">
+                  <td className="px-2 py-1 whitespace-nowrap">
+                    {formatDate(cast.timestamp)}
                   </td>
-                  <td className="px-6 py-2 text-center">{cast.reactions.count}</td>
-                  <td className="px-6 py-2 text-center">{cast.replies.count}</td>
-                  <td className="px-6 py-2 text-center">{cast.recasts.count}</td>
+                  <td className="px-2 py-1 max-w-[140px] truncate" title={cast.text}>
+                    {cast.text.split("\n")[0].slice(0, 40)}
+                  </td>
+                  <td className="px-2 py-1 text-center whitespace-nowrap">
+                    <span title="Likes">❤️ {cast.reactions.count}</span>{' '}
+                    <span title="Replies">💬 {cast.replies.count}</span>{' '}
+                    <span title="Recasts">🔄 {cast.recasts.count}</span>
+                  </td>
                 </tr>
               ))}
             </tbody>
