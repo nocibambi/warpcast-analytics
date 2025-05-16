@@ -23,8 +23,8 @@ export async function getUsernameFromFid(fid: number): Promise<string> {
       userDataType: 6, // USERNAME type
     });
 
-    if (result.isOk() && result.value?.data?.value) {
-      return result.value.data.value.toString();
+    if (result.isOk() && result.value?.data?.userDataBody?.value) {
+      return result.value.data.userDataBody.value;
     }
 
     return `fid:${fid}`;
