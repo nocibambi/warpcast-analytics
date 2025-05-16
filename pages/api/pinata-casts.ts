@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { getUsernameFromFid } from "@/lib/user";
+import { getUsernameFromFid, getCurrentFid } from "@/lib/user";
 
 // Types for Pinata Casts and Reactions
 interface CastAddBody {
@@ -32,7 +32,7 @@ export default async function handler(
 ) {
   const jwt = process.env.NEXT_PUBLIC_PINATA_API_JWT;
   const baseUrl = "https://hub.pinata.cloud/v1";
-  const fid = 967464;
+  const fid = getCurrentFid();
 
   // 1. Fetch all casts
   const castsUrl = `${baseUrl}/castsByFid?fid=${fid}`;
