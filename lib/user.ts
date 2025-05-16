@@ -23,11 +23,11 @@ export async function getUsernameFromFid(fid: number): Promise<string> {
       userDataType: 6, // USERNAME type
     });
 
-    if (!result?.data?.value) {
-      return `fid:${fid}`;
+    if (result.isOk() && result.value?.data?.value) {
+      return result.value.data.value.toString();
     }
 
-    return result.data.value.toString();
+    return `fid:${fid}`;
   } catch (error) {
     console.error("Error fetching username:", error);
     return `fid:${fid}`;
