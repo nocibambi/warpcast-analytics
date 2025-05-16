@@ -16,17 +16,16 @@ export function getCurrentFid(activeFid?: number): number {
 export async function getUsernameFromFid(fid: number): Promise<string> {
     try {
         const client = getSSLHubRpcClient(HUB_URL);
-        const requests = await client.getUserDataByFid({ 
+        const result = await client.getUserData({
             fid: fid,
             userDataType: 6 // USERNAME type
         });
 
-        const response = await requests.next();
-        if (!response.value?.data?.value) {
+        if (!result?.data?.value) {
             return `fid:${fid}`;
         }
 
-        return response.value.data.value.toString();
+        return result.data.value.toString();
     } catch (error) {
         console.error('Error fetching username:', error);
         return `fid:${fid}`;
