@@ -130,7 +130,7 @@ export default async function handler(
 
       return {
         hash: root.hash,
-        username, // Now using dynamically fetched username
+        username,
         timestamp: root.data.timestamp * 1000,
         text: root.data.castAddBody?.text ?? "",
         reactions: { count: totalLikes },
