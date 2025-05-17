@@ -59,7 +59,7 @@ export async function getUsernameFromFid(fid: number): Promise<string> {
     }
 
     return `fid:${fid}`;
-  } catch (_error) {
+  } catch {
     return `fid:${fid}`;
   }
 }
