@@ -35,7 +35,7 @@ export default async function handler(
   const fid = getCurrentFid();
 
   // 1. Fetch all casts
-  const castsUrl = `${baseUrl}/castsByFid?fid=${fid}`;
+  const castsUrl = `${baseUrl}/castsByFid?fid=${fid}&reverse=true`;
   const castsResponse = await fetch(castsUrl, {
     headers: {
       accept: "application/json",
