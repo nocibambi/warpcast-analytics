@@ -27,9 +27,9 @@ export async function getUsernameFromFid(fid: number): Promise<string> {
       return result.value.data.userDataBody.value;
     }
 
-    return `fid:${fid}`;
+    return fid.toString(); // Fallback to fid if no username found
   } catch (error) {
     console.error("Error fetching username:", error);
-    return `fid:${fid}`;
+    return fid.toString(); // Fallback to fid if no username found
   }
 }
