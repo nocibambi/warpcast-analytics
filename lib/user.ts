@@ -1,6 +1,3 @@
-import { getSSLHubRpcClient } from "@farcaster/hub-nodejs";
-
-const NEYNAR_API_KEY = process.env.NEYNAR_API_KEY;
 const DEFAULT_FID = process.env.DEFAULT_FID
   ? parseInt(process.env.DEFAULT_FID)
   : undefined;
@@ -62,7 +59,7 @@ export async function getUsernameFromFid(fid: number): Promise<string> {
     }
 
     return `fid:${fid}`;
-  } catch (error) {
+  } catch (_error) {
     return `fid:${fid}`;
   }
 }
